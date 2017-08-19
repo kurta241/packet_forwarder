@@ -40,7 +40,7 @@ Type=simple
 TimeoutSec=infinity
 RestartSec=10
 WorkingDirectory=$absolute_binary_directory
-ExecStart=$absolute_binary_path start --config=\"$absolute_config_path\"
+ExecStart=$absolute_binary_path start --config \"$absolute_config_path\"
 Restart=always
 BusName=org.thethingsnetwork.ttn-pkt-fwd" > /etc/systemd/system/ttn-pkt-fwd.service
 
